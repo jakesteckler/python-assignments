@@ -22,9 +22,9 @@ with open("superheroes.csv", "w") as f:
         ]
     )
 
-    #oop over the members, and for each member write a row to the csv file
-        for superhero in superheroes["members"]:
-        writer.writerow(
+    #Loop over the members, and for each member write a row to the csv file
+    for superhero in superheroes["members"]:
+    	writer.writerow(
             [
                 superhero["name"],
                 superhero["age"],
@@ -39,4 +39,3 @@ with open("superheroes.csv", "w") as f:
         )
 
 
-        
